@@ -264,6 +264,8 @@
 
 <script>
 
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
     const url = '/.distribuicao-lucros.pdf';
     let pdfDoc = null, pageNum = 1, pageIsRendering = false, pageNumIsPending = null;
     const scale = 2.0, canvas = document.querySelector('#pdf-render'), ctx = canvas.getContext('2d');
