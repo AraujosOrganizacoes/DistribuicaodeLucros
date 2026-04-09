@@ -263,7 +263,8 @@
 </main>
 
 <script>
-    const url = './Distribuição de Lucros.pdf';
+    // Substitua a linha da url por esta para testar:
+const url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
     let pdfDoc = null, pageNum = 1, pageIsRendering = false, pageNumIsPending = null;
     const scale = 2.0, canvas = document.querySelector('#pdf-render'), ctx = canvas.getContext('2d');
 
